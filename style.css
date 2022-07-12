@@ -1,0 +1,314 @@
+/* global styling starts */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins',
+    sans-serif;
+}
+
+
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 1rem 4rem;
+  background: blue;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: navy;
+  transform: scale(1.1);
+}
+
+/* global styling ends */
+
+
+
+/* custom styling starts */
+
+/* nav styling */
+.main-head {
+  background-color: navy;
+  color: white;
+  position: sticky;
+  top: 0px;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none
+}
+
+#logo {
+  flex: 2 1 40rem;
+  align-items: center;
+  font-family: 'Pattaya',
+    sans-serif;
+  font-weight: 400;
+}
+
+/* nav styling ends */
+
+
+/* hero styling */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgb(0, 0, 0), transparent), url("./images/heroimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero p {
+  padding: 3rem;
+}
+
+/* hero syling ends */
+
+/* about section styling begins*/
+#about {
+  min-height: 90vh;
+  background: linear-gradient(rgb(226, 219, 219), transparent),
+    url("./images/aboutimg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.about-head {
+  width: 90%;
+  margin: auto;
+}
+
+.about-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+
+/* about section styling ends here */
+
+
+/* service styling section starts here */
+#services{
+  min-height: 100vh;
+  margin: auto;
+}
+
+.service-head{
+  background: #343c44;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue  ;
+  text-align: center;
+}
+
+.service-head h2{
+  padding: 1rem;
+}
+
+.cards{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card{  
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1), 0px 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-icon{
+  background-color: #343c44;
+}
+
+.card img{
+ max-width: 15%;
+ margin: 2rem;
+}
+
+.card h4, .card p{
+  padding: 1rem;
+}
+/* service styling section ends here */
+
+
+/* contact styling starts here */
+#contact{
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper{
+  background: rgba(19, 28, 29, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 20px;  
+}
+
+.form-head{
+  text-align: center;
+  padding: 3rem;
+}
+
+.name-form, .email-form{
+  padding: 3rem;
+  text-align: center;
+}
+
+.form-wrapper label{
+  margin: 0 3rem;
+}
+
+.form-wrapper input{
+  padding: 1rem 3rem;
+}
+
+.form-wrapper button{
+  width: 50%;
+  padding: 2rem;
+  margin-top: 4 rem;
+  margin-left: 22rem;
+  margin-bottom: 2rem;
+  text-align: center; 
+}
+/* contact styling ends here */
+
+/* footer styling begins here */
+footer {
+  background-color: navy;
+  color: white;
+}
+
+.footer-wrapper{
+  display: flex;
+  padding: 2rem;
+  width:90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5{
+  flex: 1 1 40rem;
+}
+
+footer ul{
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer img{
+  height: 10px;
+}
+
+/* footer styling ends here */
+
+/* custom styling ends */
+
+
+/* media query */
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  #logo {
+    padding: 2rem;
+  }
+  footer{
+    text-align: center;
+  }
+  footer h5{
+    padding-bottom: 3rem;
+  }
+
+  .form-wrapper{
+    width: 100%;
+  }
+
+}
+/* media query ends */
